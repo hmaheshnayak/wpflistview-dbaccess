@@ -26,9 +26,9 @@ namespace ListView_DatabaseAccess.DataAccessLayer
 
         public void LoadEmployees()
         {
-            EmployeesList.Add(new Employee() { EmployeeId = 100, EmployeeName = "John Doe" });
-            EmployeesList.Add(new Employee() { EmployeeId = 101, EmployeeName = "William Doe" });
-            EmployeesList.Add(new Employee() { EmployeeId = 102, EmployeeName = "Atta Boy" });
-        }
+            EmployeesList.Add(new Employee() { EmployeeId = 100, LastName = "Doe", FirstName = "John" });
+            EmployeesList.Add(new Employee() { EmployeeId = 101, LastName = "Doe", FirstName = "William" });
+            EmployeesList.Add(new Employee() { EmployeeId = 102, LastName = "Boy", FirstName = "Atta"});
+            }
     }
 }

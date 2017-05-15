@@ -15,16 +15,31 @@ namespace ListView_DatabaseAccess.Models
             }
         }
 
-        private string empName;
-        public string EmployeeName
+        private string lastName;
+        public string LastName
         {
-            get { return empName; }
+            get { return lastName; }
             set
             {
-                empName = value;
-                RaisePropertyChanged("EmployeeName");
+                lastName = value;
+                RaisePropertyChanged("LastName");
+                RaisePropertyChanged("FullName");
             }
         }
+
+        private string firstName;
+        public string FirstName
+        {
+            get { return firstName; }
+            set
+            {
+                firstName = value;
+                RaisePropertyChanged("FirstName");
+                RaisePropertyChanged("FullName");
+            }
+        }
+
+        public string FullName { get { return firstName + " " + lastName; } }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

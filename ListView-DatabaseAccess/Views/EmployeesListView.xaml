@@ -12,7 +12,9 @@
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <Label Content="{Binding Path=EmployeeId}" />
-                        <Label Content="{Binding Path=EmployeeName}" />
+                        <TextBox Width = "100" Margin = "0 5 3 5" Text="{Binding Path=LastName, Mode=TwoWay}" />
+                        <TextBox Width = "100" Margin = "0 5 3 5" Text="{Binding Path=FirstName, Mode=TwoWay}" />
+                        <TextBlock Text="{Binding Path=FullName}" />
                     </StackPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
