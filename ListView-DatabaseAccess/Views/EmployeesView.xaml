@@ -19,7 +19,6 @@
         </DataTemplate>
     </UserControl.Resources>
     <Grid>
-        <ItemsControl ItemsSource="{Binding EmployeesList}" >
-        </ItemsControl>
+        <ItemsControl ItemsSource="{Binding EmployeesList}" />
     </Grid>
 </UserControl>
