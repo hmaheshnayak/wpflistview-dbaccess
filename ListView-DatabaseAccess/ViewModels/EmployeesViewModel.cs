@@ -26,6 +26,8 @@ namespace ListView_DatabaseAccess.ViewModels
         {
             employeeStore = EmployeeStore.GetInstance();
             EmployeesList = new ObservableCollection<Employee>();
+
+            LoadEmployees();
         }
 
         public void LoadEmployees()

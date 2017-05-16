@@ -18,9 +18,9 @@ namespace ListView_DatabaseAccess.Views
     /// <summary>
     /// Interaction logic for EmployeesListView.xaml
     /// </summary>
-    public partial class EmployeesListView : UserControl
+    public partial class EmployeesView : UserControl
     {
-        public EmployeesListView()
+        public EmployeesView()
         {
             InitializeComponent();
         }

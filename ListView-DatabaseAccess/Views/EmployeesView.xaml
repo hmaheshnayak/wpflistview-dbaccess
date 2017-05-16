@@ -1,20 +1,21 @@
-﻿<UserControl x:Class="ListView_DatabaseAccess.Views.EmployeesListView"
+﻿<UserControl x:Class="ListView_DatabaseAccess.Views.EmployeesView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ListView_DatabaseAccess.Views"
+             xmlns:vml="clr-namespace:ListView_DatabaseAccess.ViewModelLocator"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="300"
+             vml:ViewModelLocator.AutoHookedUpViewModel="True">
     <Grid>
         <ItemsControl ItemsSource="{Binding EmployeesList}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <Label Content="{Binding Path=EmployeeId}" />
                         <TextBox Width = "100" Margin = "0 5 3 5" Text="{Binding Path=LastName, Mode=TwoWay}" />
                         <TextBox Width = "100" Margin = "0 5 3 5" Text="{Binding Path=FirstName, Mode=TwoWay}" />
-                        <TextBlock Text="{Binding Path=FullName}" />
+                        <TextBlock Text="{Binding Path=FullName}" VerticalAlignment="Center"/>
                     </StackPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>

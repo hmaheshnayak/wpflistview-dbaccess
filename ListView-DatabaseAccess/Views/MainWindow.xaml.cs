@@ -14,15 +14,15 @@ namespace ListView_DatabaseAccess.Views
 
         private void EmployeesViewControl_Loaded(object sender, RoutedEventArgs e)
         {
-            EmployeesViewModel employeesVM = new EmployeesViewModel();
-            employeesVM.LoadEmployees();
+            //EmployeesViewModel employeesVM = new EmployeesViewModel();
+            //employeesVM.LoadEmployees();
 
-            EmployeesListView employeesView = sender as EmployeesListView;
+            //EmployeesListView employeesView = sender as EmployeesListView;
 
-            if (employeesView != null)
-            {
-                employeesView.DataContext = employeesVM;
-            }
+            //if (employeesView != null)
+            //{
+            //    employeesView.DataContext = employeesVM;
+            //}
         }
     }
 }
