@@ -19,6 +19,9 @@
         </DataTemplate>
     </UserControl.Resources>
     <Grid>
-        <ItemsControl ItemsSource="{Binding EmployeesList}" />
+        <StackPanel Orientation="Horizontal">
+            <ListBox ItemsSource="{Binding EmployeesList}" SelectedItem="{Binding SelectedEmployee}"/>
+            <Button Content="Delete" Command="{Binding DeleteEmployee}" Height="20" VerticalAlignment="Top"/>
+        </StackPanel>
     </Grid>
 </UserControl>

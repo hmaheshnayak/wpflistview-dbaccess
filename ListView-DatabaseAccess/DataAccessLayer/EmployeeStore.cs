@@ -29,6 +29,14 @@ namespace ListView_DatabaseAccess.DataAccessLayer
             EmployeesList.Add(new Employee() { EmployeeId = 100, LastName = "Doe", FirstName = "John" });
             EmployeesList.Add(new Employee() { EmployeeId = 101, LastName = "Doe", FirstName = "William" });
             EmployeesList.Add(new Employee() { EmployeeId = 102, LastName = "Boy", FirstName = "Atta"});
-            }
+        }
+
+        public void RemoveEmployee(int employeeId)
+        {
+            Employee toDelete = EmployeesList.Find(employee => { if (employee.EmployeeId == employeeId) return true; return false; });
+
+            if (toDelete != null)
+                EmployeesList.Remove(toDelete); 
+        }
     }
 }
